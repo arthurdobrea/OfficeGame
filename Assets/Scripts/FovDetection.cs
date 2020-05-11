@@ -12,24 +12,24 @@ public class FovDetection : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, maxRadius);
-
-        Vector3 fovLine1 = Quaternion.AngleAxis(maxAngle, transform.up) * transform.forward * maxRadius;
-        Vector3 fovLine2 = Quaternion.AngleAxis(-maxAngle, transform.up) * transform.forward * maxRadius;
-
-        Gizmos.color = Color.blue;
-        Gizmos.DrawRay(transform.position, fovLine1);
-        Gizmos.DrawRay(transform.position, fovLine2);
-
-        if (!isInFov)
-            Gizmos.color = Color.red;
-        else
-            Gizmos.color = Color.green;
-        Gizmos.DrawRay(transform.position, (ShapeShifterScript.player.transform.position - transform.position).normalized * maxRadius);
-
-        Gizmos.color = Color.black;
-        Gizmos.DrawRay(transform.position, transform.forward * maxRadius);
+        // Gizmos.color = Color.yellow;
+        // Gizmos.DrawWireSphere(transform.position, maxRadius);
+        //
+        // Vector3 fovLine1 = Quaternion.AngleAxis(maxAngle, transform.up) * transform.forward * maxRadius;
+        // Vector3 fovLine2 = Quaternion.AngleAxis(-maxAngle, transform.up) * transform.forward * maxRadius;
+        //
+        // Gizmos.color = Color.blue;
+        // Gizmos.DrawRay(transform.position, fovLine1);
+        // Gizmos.DrawRay(transform.position, fovLine2);
+        //
+        // if (!isInFov)
+        //     Gizmos.color = Color.red;
+        // else
+        //     Gizmos.color = Color.green;
+        // Gizmos.DrawRay(transform.position, (ShapeShifterScript.player.transform.position - transform.position).normalized * maxRadius);
+        //
+        // Gizmos.color = Color.black;
+        // Gizmos.DrawRay(transform.position, transform.forward * maxRadius);
     }
 
     public static bool inFOV(Transform checkingObject, Transform target, float maxAngle, float maxRadius)

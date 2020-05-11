@@ -1,7 +1,5 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
-using Random = UnityEngine.Random;
 
 public class HumanWalkScript : MonoBehaviour
 {
@@ -13,14 +11,15 @@ public class HumanWalkScript : MonoBehaviour
     public GameObject currentLocationToMove;
 
     private State state;
-    
+    private static string nameOfAiThatHoldsPlayer;
+
     private enum State
     {
         SCOUT,MOVING_TO_PLAYER,GRAB_PLAYER,PUT_PLAYER
     }
 
     private void Start()
-    { 
+    {
         currentLocationToMove = pointOfInterest[0];
         state = State.SCOUT;
     }
@@ -33,32 +32,45 @@ public class HumanWalkScript : MonoBehaviour
             {
                 if (inFOV())
                 {
-                    state = State.MOVING_TO_PLAYER;
+                    if (!ShapeShifterScript.isGrabbed)
+                    {
+                        nameOfAiThatHoldsPlayer = transform.name;
+                        state = State.MOVING_TO_PLAYER;
+                    }
                 }
                 else
                 {
                     findNewPlaceToGo();
                     moveToPlace();
                 }
+
                 break;
             }
             case State.MOVING_TO_PLAYER:
             {
-                if (Vector3.Distance(transform.position, ShapeShifterScript.player.transform.position) < 1)
+                if (nameOfAiThatHoldsPlayer.Equals(transform.name))
                 {
-                    state = State.GRAB_PLAYER;
-                    ShapeShifterScript.isGrabbed = true;
+                    if (Vector3.Distance(transform.position, ShapeShifterScript.player.transform.position) < 1)
+                    {
+                        state = State.GRAB_PLAYER;
+                        ShapeShifterScript.isGrabbed = true;
+                    }
+                    else
+                    {
+                        moveToPlayer();
+                    }
                 }
                 else
                 {
-                    moveToPlayer();
+                    state = State.SCOUT;
                 }
+
                 break;
             }
             case State.GRAB_PLAYER:
             {
                 movePlayerToTable();
-                
+
                 ShapeShifterScript.player.GetComponent<Rigidbody>().useGravity = false;
 
                 if (Vector3.Distance(transform.position, placeWhereAiPutsPlayer.transform.position) < 1)
@@ -69,7 +81,7 @@ public class HumanWalkScript : MonoBehaviour
 
                     ShapeShifterScript.player.GetComponent<Rigidbody>().useGravity = true;
                 }
-                
+
                 break;
             }
         }

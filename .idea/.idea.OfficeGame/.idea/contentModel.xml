@@ -27,7 +27,6 @@
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterController.cs" t="Include" />
           <e p="FovDetection.cs" t="Include" />
-          <e p="GrabAndPlacePlayer.cs" t="Include" />
           <e p="HumanWalkScript.cs" t="Include" />
           <e p="Sanity.cs" t="Include" />
           <e p="ShapeShifterScript.cs" t="Include" />
