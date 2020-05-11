@@ -9,6 +9,7 @@ public class CharacterController : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded = true;
     public static bool isMoving;
+    
 
     void Start()
     {

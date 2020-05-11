@@ -28,6 +28,8 @@
           <e p="CharacterController.cs" t="Include" />
           <e p="FovDetection.cs" t="Include" />
           <e p="HumanWalkScript.cs" t="Include" />
+          <e p="itemIdentification.cs" t="Include" />
+          <e p="PlaceHolder.cs" t="Include" />
           <e p="Sanity.cs" t="Include" />
           <e p="ShapeShifterScript.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3ab4e9e-1849-4df0-aeeb-65ae60fff93b" name="Default Changelist" comment="add all">
+    <list default="true" id="e3ab4e9e-1849-4df0-aeeb-65ae60fff93b" name="Default Changelist" comment="Ai stuck bug fixed.">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlaceHolder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlaceHolder.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonOffice/Scene/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonOffice/Scene/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrabAndPlacePlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrabAndPlacePlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" afterDir="false" />
     </list>
     <list id="d169f37b-dc2e-4b50-9389-8f2262fbac66" name="add all" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +26,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions Pack/AnimationControllers.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlaceHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sanity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,8 +41,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveAndPlaceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GrabAndPlacePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/itemIdentification.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlaceHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" />
       </list>
     </option>
@@ -60,6 +67,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
@@ -105,7 +113,8 @@
       <workItem from="1588766791889" duration="605000" />
       <workItem from="1588769640537" duration="9943000" />
       <workItem from="1588832739385" duration="5017000" />
-      <workItem from="1589187878727" duration="4380000" />
+      <workItem from="1589187878727" duration="7175000" />
+      <workItem from="1589210537726" duration="1796000" />
     </task>
     <task id="LOCAL-00001" summary="add all">
       <created>1588769811299</created>
@@ -128,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588769953765</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ai stuck bug fixed.">
+      <created>1589207757686</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589207757686</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,8 +166,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add all" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all" />
+    <MESSAGE value="Ai stuck bug fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ai stuck bug fixed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1589206220109">
@@ -166,10 +184,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="807" y="455" key="VCS.ChangelistChooser/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1588769950231" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1588769955250">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589207759425">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1588769955250" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1589207759425" />
     <state x="519" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588776319673">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -182,5 +200,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="617" y="272" width="686" height="536" key="find.popup/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1588520148545" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589208076056">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1589208076056" />
   </component>
 </project>
