@@ -13,6 +13,8 @@ public class HumanWalkScript : MonoBehaviour
     private State state;
     private static string nameOfAiThatHoldsPlayer;
     private PlaceHolder placeHolder;
+    private FullAnimationController animationController;
+    
     private enum State
     {
         SCOUT,MOVING_TO_PLAYER,GRAB_PLAYER,PUT_PLAYER
@@ -20,6 +22,7 @@ public class HumanWalkScript : MonoBehaviour
 
     private void Start()
     {
+        animationController = GetComponent<FullAnimationController>();
         currentLocationToMove = pointOfInterest[0];
         state = State.SCOUT;
     }
@@ -30,7 +33,7 @@ public class HumanWalkScript : MonoBehaviour
         {
             case State.SCOUT:
             {
-                if (inFOV())
+                if (inFOV() && ShapeShifterScript.player.transform.position.y < 0.8f)
                 {
                     if (!ShapeShifterScript.isGrabbed)
                     {
@@ -40,6 +43,7 @@ public class HumanWalkScript : MonoBehaviour
                 }
                 else
                 {
+                    animationController.setToWalking();
                     findNewPlaceToGo();
                     moveToPlace();
                 }

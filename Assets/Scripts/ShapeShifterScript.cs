@@ -11,7 +11,7 @@ public class ShapeShifterScript : MonoBehaviour
     public static bool isNewPlayerSwitched = false;
 
     public static bool isGrabbed = false;
-    
+
     // Start is called before the first frame update
     void Awake()
     {
