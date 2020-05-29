@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3ab4e9e-1849-4df0-aeeb-65ae60fff93b" name="Default Changelist" comment="PlaceManager created">
+    <list default="true" id="e3ab4e9e-1849-4df0-aeeb-65ae60fff93b" name="Default Changelist" comment="Added new animation and checking height of player">
       <change afterPath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions Pack/AnimationControllers/BasicMotions@Cheer01.controller" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions Pack/AnimationControllers/BasicMotions@Cheer01.controller.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions Pack/AnimationControllers/BasicMotions@Clap01.controller" afterDir="false" />
@@ -304,8 +304,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/useAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FullAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FullAnimationController.cs" />
       </list>
     </option>
   </component>
@@ -376,7 +376,7 @@
       <workItem from="1589210537726" duration="2625000" />
       <workItem from="1590220748170" duration="1988000" />
       <workItem from="1590680761643" duration="7418000" />
-      <workItem from="1590743797553" duration="91000" />
+      <workItem from="1590743797553" duration="381000" />
     </task>
     <task id="LOCAL-00001" summary="add all">
       <created>1588769811299</created>
@@ -420,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589212791204</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added new animation and checking height of player">
+      <created>1590744173619</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590744173619</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +453,8 @@
     <MESSAGE value="add all" />
     <MESSAGE value="Ai stuck bug fixed." />
     <MESSAGE value="PlaceManager created" />
-    <option name="LAST_COMMIT_MESSAGE" value="PlaceManager created" />
+    <MESSAGE value="Added new animation and checking height of player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new animation and checking height of player" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1589206220109">
@@ -461,10 +469,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="807" y="455" key="VCS.ChangelistChooser/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1588769950231" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589212792712">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590744177082">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1589212792712" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1590744177082" />
     <state x="519" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588776319673">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
