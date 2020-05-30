@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - canCopy
+  - floor
   layers:
   - Default
   - TransparentFX

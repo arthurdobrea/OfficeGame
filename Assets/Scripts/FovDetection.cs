@@ -7,6 +7,7 @@ public class FovDetection : MonoBehaviour
 {
     public float maxAngle;
     public float maxRadius;
+    public Vector3 offset = new Vector3(0,0.1f,0);
 
     private bool isInFov = false;
 
@@ -26,7 +27,7 @@ public class FovDetection : MonoBehaviour
         //     Gizmos.color = Color.red;
         // else
         //     Gizmos.color = Color.green;
-        // Gizmos.DrawRay(transform.position, (ShapeShifterScript.player.transform.position - transform.position).normalized * maxRadius);
+        // Gizmos.DrawRay(transform.position, (ShapeShifterScript.player.transform.position + offset - transform.position).normalized * maxRadius);
         //
         // Gizmos.color = Color.black;
         // Gizmos.DrawRay(transform.position, transform.forward * maxRadius);

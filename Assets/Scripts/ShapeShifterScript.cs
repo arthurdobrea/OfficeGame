@@ -1,12 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityTemplateProjects;
 
 public class ShapeShifterScript : MonoBehaviour
 {
     public Camera camera;
     public GameObject firstPlayer;
     public static GameObject player;
+    public AudioManager audioManager;
 
     public static bool isNewPlayerSwitched = false;
 
@@ -16,6 +19,7 @@ public class ShapeShifterScript : MonoBehaviour
     void Awake()
     {
         player = firstPlayer;
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -32,8 +36,10 @@ public class ShapeShifterScript : MonoBehaviour
                 {
                     Destroy(player);
                     player = Instantiate(hit.transform, player.transform.position, Quaternion.identity).gameObject;
+                    audioManager.Play("PlayerMorph");
                     player.AddComponent<Rigidbody>();
-                    isNewPlayerSwitched = true;    
+                    player.AddComponent<OnCollisionClass>();
+                    isNewPlayerSwitched = true;
                 }
             }
         }

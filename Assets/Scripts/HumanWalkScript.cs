@@ -14,7 +14,8 @@ public class HumanWalkScript : MonoBehaviour
     private static string nameOfAiThatHoldsPlayer;
     private PlaceHolder placeHolder;
     private FullAnimationController animationController;
-    
+    private AudioManager audioManager;
+    private bool audioAlreadyPlayed = false;
     private enum State
     {
         SCOUT,MOVING_TO_PLAYER,GRAB_PLAYER,PUT_PLAYER
@@ -22,8 +23,9 @@ public class HumanWalkScript : MonoBehaviour
 
     private void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
         animationController = GetComponent<FullAnimationController>();
-        currentLocationToMove = pointOfInterest[0];
+        currentLocationToMove = pointOfInterest[Random.Range(0, 7)];
         state = State.SCOUT;
     }
 
@@ -73,6 +75,12 @@ public class HumanWalkScript : MonoBehaviour
             }
             case State.GRAB_PLAYER:
             {
+                if (!audioAlreadyPlayed)
+                {
+                    audioManager.Play("PickUp");
+                    audioAlreadyPlayed = true;
+                }
+                
                 placeHolder = ItemIdentification.getPLacePoint(ShapeShifterScript.player.name);
                 
                 movePlayerToTable();
@@ -84,6 +92,7 @@ public class HumanWalkScript : MonoBehaviour
                     ShapeShifterScript.player.transform.position = placeHolder.placePoint.transform.position;
                     ShapeShifterScript.isGrabbed = false;
                     state = State.SCOUT;
+                    audioAlreadyPlayed = false;
 
                     ShapeShifterScript.player.GetComponent<Rigidbody>().useGravity = true;
                 }
@@ -107,7 +116,7 @@ public class HumanWalkScript : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, currentLocationToMove.transform.position) <= 1)
         {
-            int range = Random.Range(1, 5);
+            int range = Random.Range(0, 7);
             currentLocationToMove = pointOfInterest[range];
         }
     }

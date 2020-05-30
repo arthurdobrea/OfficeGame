@@ -9,7 +9,8 @@ public class CharacterController : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded = true;
     public static bool isMoving;
-    
+    public float jump = 0;
+    private Vector3 movement;
 
     void Start()
     {
@@ -26,7 +27,18 @@ public class CharacterController : MonoBehaviour
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            movement = new Vector3(moveHorizontal, jump, moveVertical);
+        }
+        else
+        {
+            movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        }
+
+
         if (Input.anyKey)
         {
             isMoving = true;

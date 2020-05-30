@@ -24,17 +24,21 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
+          <e p="ChagePlayer.cs" t="Include" />
           <e p="CharacterController.cs" t="Include" />
           <e p="FovDetection.cs" t="Include" />
           <e p="FullAnimationController.cs" t="Include" />
           <e p="HumanWalkScript.cs" t="Include" />
           <e p="IdleAndTalkController.cs" t="Include" />
           <e p="itemIdentification.cs" t="Include" />
+          <e p="OnCollisionClass.cs" t="Include" />
           <e p="PlaceHolder.cs" t="Include" />
           <e p="Sanity.cs" t="Include" />
           <e p="ShapeShifterScript.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="Sound.cs" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
