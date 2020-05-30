@@ -1,41 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3ab4e9e-1849-4df0-aeeb-65ae60fff93b" name="Default Changelist" comment="Added new animation and checking height of player">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/108695__dean-raul-diarchangeli__office-ambience.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/108695__dean-raul-diarchangeli__office-ambience.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/336598__inspectorj__footsteps-concrete-a.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/336598__inspectorj__footsteps-concrete-a.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/411178__silverillusionist__pick-up-item-2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/411178__silverillusionist__pick-up-item-2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Metal Box Impact 1_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Metal Box Impact 1_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/zapsplat_cartoon_pop_mouth_011_46674.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/zapsplat_cartoon_pop_mouth_011_46674.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ChagePlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ChagePlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/OnCollisionClass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/OnCollisionClass.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonOffice/Scene/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonOffice/Scene/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonOffice/Scene/Demo/NavMesh-NavMesh 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonOffice/Scene/Demo/NavMesh-NavMesh 1.asset" afterDir="false" />
+    <list default="true" id="e3ab4e9e-1849-4df0-aeeb-65ae60fff93b" name="Default Changelist" comment="Added sound effects">
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <list id="d169f37b-dc2e-4b50-9389-8f2262fbac66" name="add all" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions Pack/Prefabs/Basic Motions Dummy.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions Pack/AnimationControllers.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -165,7 +133,7 @@
       <workItem from="1590680761643" duration="7418000" />
       <workItem from="1590743797553" duration="9464000" />
       <workItem from="1590822227303" duration="1318000" />
-      <workItem from="1590823638949" duration="6852000" />
+      <workItem from="1590823638949" duration="7122000" />
     </task>
     <task id="LOCAL-00001" summary="add all">
       <created>1588769811299</created>
@@ -223,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590744228743</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added sound effects">
+      <created>1590836080303</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590836080303</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added sound effects">
+      <created>1590836101157</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590836101157</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +232,8 @@
     <MESSAGE value="Ai stuck bug fixed." />
     <MESSAGE value="PlaceManager created" />
     <MESSAGE value="Added new animation and checking height of player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new animation and checking height of player" />
+    <MESSAGE value="Added sound effects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sound effects" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1589206220109">
