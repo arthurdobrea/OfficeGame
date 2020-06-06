@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 
 public class HumanWalkScript : MonoBehaviour
 {
@@ -16,9 +14,13 @@ public class HumanWalkScript : MonoBehaviour
     private FullAnimationController animationController;
     private AudioManager audioManager;
     private bool audioAlreadyPlayed = false;
+
     private enum State
     {
-        SCOUT,MOVING_TO_PLAYER,GRAB_PLAYER,PUT_PLAYER
+        SCOUT,
+        MOVING_TO_PLAYER,
+        GRAB_PLAYER,
+        PUT_PLAYER
     }
 
     private void Start()
@@ -35,7 +37,7 @@ public class HumanWalkScript : MonoBehaviour
         {
             case State.SCOUT:
             {
-                if (inFOV() && ShapeShifterScript.player.transform.position.y < 0.8f)
+                if (inFOV() && decideIfPlayerShouldBePicked())
                 {
                     if (!ShapeShifterScript.isGrabbed)
                     {
@@ -80,9 +82,9 @@ public class HumanWalkScript : MonoBehaviour
                     audioManager.Play("PickUp");
                     audioAlreadyPlayed = true;
                 }
-                
+
                 placeHolder = ItemIdentification.getPLacePoint(ShapeShifterScript.player.name);
-                
+
                 movePlayerToTable();
 
                 ShapeShifterScript.player.GetComponent<Rigidbody>().useGravity = false;
@@ -130,5 +132,45 @@ public class HumanWalkScript : MonoBehaviour
     private bool inFOV()
     {
         return FovDetection.inFOV(transform, ShapeShifterScript.player.transform, 75, 3);
+    }
+
+    private bool DecideIfPlayerShouldBeplacedNearWall()
+    {
+        if (ShapeShifterScript.player.transform.name == "nearWall(Clone)" && 
+            !ShapeShifterScript.isNearWall)
+        {
+            Debug.Log("true");
+            return true;
+        }
+        Debug.Log("false");
+        return false;
+    }
+
+    private bool DecideIfPlayerShouldBePlacedOnTable()
+    {
+        if (ShapeShifterScript.player.transform.name == "onTable(Clone)" &&
+            ShapeShifterScript.player.transform.position.y < 0.8f)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    private bool DecideIfPlayerShouldBePlacedInGarbage()
+    {
+        if (ShapeShifterScript.player.transform.name == "inGarbage(Clone)" &&
+            ShapeShifterScript.player.transform.position.y < 0.8f)
+        {
+           
+            return true;
+        }
+        
+        return false;
+    }
+
+    public bool decideIfPlayerShouldBePicked()
+    {
+        return DecideIfPlayerShouldBePlacedOnTable() || DecideIfPlayerShouldBePlacedInGarbage() ||  DecideIfPlayerShouldBeplacedNearWall();
     }
 }

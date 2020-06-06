@@ -12,6 +12,7 @@ public class ShapeShifterScript : MonoBehaviour
     public AudioManager audioManager;
 
     public static bool isNewPlayerSwitched = false;
+    public static bool isNearWall;
 
     public static bool isGrabbed = false;
 
@@ -39,6 +40,7 @@ public class ShapeShifterScript : MonoBehaviour
                     audioManager.Play("PlayerMorph");
                     player.AddComponent<Rigidbody>();
                     player.AddComponent<OnCollisionClass>();
+                    player.tag = "Player";
                     isNewPlayerSwitched = true;
                 }
             }

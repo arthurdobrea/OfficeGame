@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3ab4e9e-1849-4df0-aeeb-65ae60fff93b" name="Default Changelist" comment="Added Main Menu scene and theme Music">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DetectIfPlayerNearWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OfficeGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <list id="d169f37b-dc2e-4b50-9389-8f2262fbac66" name="add all" comment="" />
@@ -39,8 +42,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/UI/SettingsMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/SettingsMenu.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Animation.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DetectIfPlayerNearWall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Kevin Iglesias/Basic Motions Pack/AnimationControllers/FullAnimationController.controller.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sanity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Game.unity" root0="FORCE_HIGHLIGHTING" />
@@ -54,24 +59,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GrabAndPlacePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/itemIdentification.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlaceHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/FullAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/useAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FullAnimationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/ChagePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnCollisionClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/SettingsMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShapeShifterScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/DetectIfPlayerNearWall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemIdentification.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HumanWalkScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FovDetection.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +151,9 @@
       <workItem from="1590743797553" duration="9464000" />
       <workItem from="1590822227303" duration="1318000" />
       <workItem from="1590823638949" duration="13587000" />
-      <workItem from="1590927928501" duration="17000" />
+      <workItem from="1590927928501" duration="9658000" />
+      <workItem from="1591374248829" duration="7000" />
+      <workItem from="1591429767769" duration="1025000" />
     </task>
     <task id="LOCAL-00001" summary="add all">
       <created>1588769811299</created>
@@ -259,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590848284683</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add start and end transition and menu">
+      <created>1590927976676</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1590927976676</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +304,8 @@
     <MESSAGE value="Added sound effects" />
     <MESSAGE value="Added Game Scene" />
     <MESSAGE value="Added Main Menu scene and theme Music" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Main Menu scene and theme Music" />
+    <MESSAGE value="Add start and end transition and menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add start and end transition and menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1589206220109">
@@ -300,14 +316,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="780" y="250" key="RollbackChangesDialog/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1588787203422" />
-    <state x="807" y="455" key="VCS.ChangelistChooser" timestamp="1590744222061">
+    <state x="807" y="455" key="VCS.ChangelistChooser" timestamp="1590927957752">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="807" y="455" key="VCS.ChangelistChooser/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1590744222061" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590848285658">
+    <state x="807" y="455" key="VCS.ChangelistChooser/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1590927957752" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590927980183">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1590848285658" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1590927980183" />
     <state x="519" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590827894259">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -320,9 +336,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="617" y="272" width="686" height="536" key="find.popup/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1588520148545" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589208076056">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1590930115820">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1589208076056" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.30.1680.1050@0.0.1920.1080" timestamp="1590930115820" />
   </component>
 </project>

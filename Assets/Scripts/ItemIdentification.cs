@@ -26,9 +26,5 @@ public class ItemIdentification : MonoBehaviour
     {
         return PlaceObjectMap[nameOfProp];
     }
-
-    private void Update()
-    {
-        // Debug.Log("here             " + PlaceObjectMap["onTable(clone)"]);
-    }
+    
 }
